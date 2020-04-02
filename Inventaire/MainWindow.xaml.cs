@@ -74,5 +74,7 @@ namespace Inventaire
             lvCustomers.SelectedIndex = currentIndex;
 
         }
+
+
     }
 }
