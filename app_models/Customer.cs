@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace app_models
+namespace BillingManagement.Models
 {
     public class Customer : INotifyPropertyChanged
     {
