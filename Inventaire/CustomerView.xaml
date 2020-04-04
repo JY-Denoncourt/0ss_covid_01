@@ -17,7 +17,7 @@
                     <Separator/>
                     <MenuItem Header="_Nouveau client" Click="CustomerNew_Click"/>
                     <Separator/>
-                    <MenuItem Header="_Quitter"/>
+                    <MenuItem Header="_Quitter" Click="Quit_Click"/>
                 </MenuItem>
                 <MenuItem Header="_Édition">
                     <MenuItem Header="Couper..."/>
@@ -36,6 +36,22 @@
             <TextBlock Text="Client sélectionné : " />
             <TextBlock Text="{Binding SelectedCustomer.Info}" />
         </StatusBar>
+
+
+        <ToolBarTray DockPanel.Dock="Top" >
+            <ToolBar>
+                <Button ToolTip="Creer un nouveau Client Custummer"
+                        Margin="10,0,10,0" Click="CustomerNew_Click">
+                    Nouveau
+                </Button>
+
+                <Button ToolTip="Quitter l'application"
+                        Margin="20,0,20,0" Click="Quit_Click">
+                    Quitter
+                </Button>
+            </ToolBar>
+        </ToolBarTray>
+
 
         <Grid>
             <Grid.ColumnDefinitions>

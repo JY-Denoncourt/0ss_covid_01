@@ -1,5 +1,6 @@
 ﻿using BillingManagement.Business;
 using BillingManagement.Models;
+using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 
@@ -32,7 +33,6 @@ namespace BillingManagement.UI.ViewModels
             }
         }
 
-       
 
         public CustomersViewModel()
         {
