@@ -6,8 +6,7 @@
         xmlns:local="clr-namespace:Inventaire"
         mc:Ignorable="d"
         Title="Gestion de clients" Width="800" Height="500"
-        MinHeight="500" MinWidth="640"
-        DataContext="{Binding RelativeSource={RelativeSource self}}">
+        MinHeight="500" MinWidth="640">
     <DockPanel>
         <StackPanel DockPanel.Dock="Top">
             <Menu>
@@ -32,10 +31,12 @@
                 </MenuItem>
             </Menu>
         </StackPanel>
+        
         <StatusBar DockPanel.Dock="Bottom" Height="25">
             <TextBlock Text="Client sélectionné : " />
             <TextBlock Text="{Binding SelectedCustomer.Info}" />
         </StatusBar>
+
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>

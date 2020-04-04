@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BillingManagement.UI.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +14,13 @@ namespace Inventaire
     /// </summary>
     public partial class App : Application
     {
+        MainWindow _wnd;
+
+        public App()
+        {
+            CustomersViewModel vm = new CustomersViewModel();
+            _wnd = new MainWindow(vm);
+            _wnd.Show();
+        }
     }
 }
